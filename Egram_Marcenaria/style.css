@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #261D17;
+    --cor2: #594032;
+    --cor3: #8C6E35;
+    --cor4: #8C7161;
+    --cor5: #EBF1F2;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: var(--cor1);
+    align-items: center;
+    border-radius: 0 0 .2em .2em;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+header > a{
+    max-height: 100px;
+}
+
+a > img{
+    border-radius: 0 .2em .2em .2em;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    margin: 0em 1em 0em 1em;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    border-radius: 0.2em;
+    padding: 1em;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
+main{
+    background: linear-gradient(rgba(140, 113, 97, 0.35), rgba(235, 241, 242));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#t_banner{
+    display: flex;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+#f_banner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#b_main{
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    border-radius: 3em;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+footer{
+    display: flex;
+    background-color: var(--cor1);
+    padding: 1em;
+    border-radius: .2em .2em 0em 0em;
+    color: var(--cor5);
+}
+
+#info>p{
+    margin: 0.2em;
+    padding: 0;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.t-info{
+    font-weight: bold;
+}
+
+#redes a img{
+    max-width: 2em;
+    margin: 1em;
+}
+
+#redes{
+    display: flex;
+    max-height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+#c_desenvolvedor{
+    display: flex;
+    justify-content: center;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 0.7em;
+    margin: 0;
+    font-weight: bold;
+}
