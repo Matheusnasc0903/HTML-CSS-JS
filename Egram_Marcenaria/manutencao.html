@@ -10,8 +10,9 @@
             background: linear-gradient(rgba(140, 113, 97, 0.35), rgba(235, 241, 242));
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            margin: 0;
         }
         h1{
             color: #261D17;
@@ -20,9 +21,50 @@
             padding: 1em;
             border-radius: .5em;
         }
+        header{
+            background-color: #261D17;
+            display: flex;
+            width: 100%;
+        }
+        header a > img{
+            height: 100%;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 0em 1em 0em 1em;
+            justify-content: space-evenly;
+        }
+
+        nav a{
+            display: flex;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border-radius: 0.2em;
+            padding: 1em;
+            transition-duration: 0.5s;
+        }
+
+        nav a:hover{
+            background-color: #8C7161;
+            color: var(--cor1);
+        }
+
     </style>
 </head>
 <body>
+    <header>
+        <a href="index.html"><img src="imagens/logo_pq.jpg" alt="logo"></a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="manutencao.html">Portifólio</a>
+            <a href="manutencao.html">Sobre</a>
+            <a href="manutencao.html">Atendimento</a>
+        </nav>
+    </header>
     <h1>Em Manutenção...</h1>
 </body>
 </html>
